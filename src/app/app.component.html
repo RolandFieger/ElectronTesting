@@ -1,7 +1,4 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+<app-titleheader fxLayout="row" class="header"></app-titleheader>
+
 <h2>Here is a first calendar control: </h2>
-<p-calendar [(ngModel)]="dateValue" dateFormat="dd.mm.yy" [showIcon]=true></p-calendar>
+<p-calendar [(ngModel)]="dateValue" dateFormat="dd.mm.yy" [showIcon]=true [locale]="local.de"></p-calendar>
